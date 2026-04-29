@@ -8,6 +8,8 @@
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from surprise import Dataset, Reader, SVD, BaselineOnly
+from surprise.model_selection import cross_validate, train_test_split
 
 
 # In[3]:
@@ -118,15 +120,6 @@ plt.show()
 # In[ ]:
 
 
-# Install scikit-surprise if not available
-try:
-    from surprise import Dataset, Reader, SVD, BaselineOnly
-    from surprise.model_selection import cross_validate, train_test_split
-except ImportError:
-    import subprocess
-    subprocess.check_call(['pip', 'install', 'scikit-surprise'])
-    from surprise import Dataset, Reader, SVD, BaselineOnly
-    from surprise.model_selection import cross_validate, train_test_split
 
 # Prepare data for Surprise library
 reader = Reader(rating_scale=(1, 5))
