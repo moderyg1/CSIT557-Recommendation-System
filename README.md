@@ -27,10 +27,10 @@ comparisons.ipynb - Charts and tables comparing each method
 
 ## Results Summary
 
-|   Method   |   MAE    |   RMSE  |   Model       |
- -----------  ---------- ---------  --------------
-|   Cosine   |   0.819  |   1.083 |   User Based  |
-|   Pearson  |   0.843  |   1.103 |   User Based  |
-|   Cosine   |   0.829  |   1.102 |   Item Based  |
-|   Pearson  |   0.847  |   1.117 |   Item Based  |
-|   SVD      |   0.740  |   0.958 |   SVD         |
+| Method  |  MAE  | RMSE  | Model       |
+|:--------|:-----:|:-----:|:------------|
+| Cosine  | 0.819 | 1.083 | User Based  |
+| Pearson | 0.843 | 1.103 | User Based  |
+| Cosine  | 0.829 | 1.102 | Item Based  |
+| Pearson | 0.847 | 1.117 | Item Based  |
+| SVD     | 0.740 | 0.958 | SVD         |
